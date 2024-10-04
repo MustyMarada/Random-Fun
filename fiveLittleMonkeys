@@ -1,14 +1,14 @@
-public class fiveLittleMonkeysTwo {
+public class FiveLittleMonkeysTwo {
     public static void main(String[] args) {
         // Array containing the string representation of the numbers
-        int[] numbers = {5, 4, 3, 2, 1};
+        String[] numbers = {"Five","Four","Three","Two","One"};
 
         // Initialize the index to start from the beginning of the array
         int index = 0;
 
         // Loop through each number
         while (index < numbers.length) {
-            int monkeyCount = numbers[index];
+            String monkeyCount = numbers[index];
 
             // Print the lyrics for one iteration
             System.out.println(monkeyCount + " little monkeys jumping on the bed,");
