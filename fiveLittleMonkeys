@@ -1,0 +1,28 @@
+public class fiveLittleMonkeysTwo {
+    public static void main(String[] args) {
+        // Array containing the string representation of the numbers
+        int[] numbers = {5, 4, 3, 2, 1};
+
+        // Initialize the index to start from the beginning of the array
+        int index = 0;
+
+        // Loop through each number
+        while (index < numbers.length) {
+            int monkeyCount = numbers[index];
+
+            // Print the lyrics for one iteration
+            System.out.println(monkeyCount + " little monkeys jumping on the bed,");
+            System.out.println("One fell down and bumped his head,");
+            System.out.println("Mama called the doctor and the doctor said,");
+            if (index < numbers.length - 1) {
+                System.out.println("\"No more monkeys jumping on the bed!\"");
+            } else {
+                System.out.println("\"Put those monkeys right to bed!\"");
+            }
+            System.out.println(); // Print an empty line for better readability
+
+            // Increment the index to move to the next number
+            index++;
+        }
+    }
+}
