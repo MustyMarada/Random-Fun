@@ -1,28 +1,28 @@
-public class FiveLittleMonkeysTwo {
+public class fiveLittleMonkeys {
     public static void main(String[] args) {
         // Array containing the string representation of the numbers
-        String[] numbers = {"Five","Four","Three","Two","One"};
-
-        // Initialize the index to start from the beginning of the array
+        String[] numbers = {"Five", "Four", "Three", "Two", "One"};
+        
         int index = 0;
 
         // Loop through each number
         while (index < numbers.length) {
             String monkeyCount = numbers[index];
 
-            // Print the lyrics for one iteration
-            System.out.println(monkeyCount + " little monkeys jumping on the bed,");
+            // If we should use singular or plural form
+            String monkeys = index == numbers.length - 1 ? "monkey" : "monkeys";
+            
+            System.out.println(monkeyCount + " little " + monkeys + " jumping on the bed,");
             System.out.println("One fell down and bumped his head,");
             System.out.println("Mama called the doctor and the doctor said,");
-            if (index < numbers.length - 1) {
-                System.out.println("\"No more monkeys jumping on the bed!\"");
-            } else {
-                System.out.println("\"Put those monkeys right to bed!\"");
-            }
+            System.out.println("\"No more monkeys jumping on the bed!\"");
             System.out.println(); // Print an empty line for better readability
 
             // Increment the index to move to the next number
             index++;
         }
+        
+        System.out.println("One little monkey left the bed,");
+        System.out.println("And now it's time to rest instead.");
     }
 }
